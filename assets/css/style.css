@@ -10,7 +10,7 @@
 
 h1 {
     background-color: #084e4b;
-    padding: 25px;
+    padding: 15px;
     color: white;
     margin: 0;
     text-align: center;
@@ -23,8 +23,8 @@ p {
     color: #084e4b;
     background-color: white;
     width: 500px;
-    padding: 40px;
-    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 #random {
@@ -36,6 +36,8 @@ p {
     height: 48px;
     font-weight: bold;
     font-size: 30px;
+    margin: 5px 20px 20px 20px;
+    
 
 }
 
@@ -45,7 +47,8 @@ p {
     position: relative;
     float: left;
     width: 70px;
-    margin-left: 10px;
+    margin: 5px 20px 20px 10px;
+
 
 }
 
@@ -61,7 +64,7 @@ p {
 }
 
 #yourguess {
-    width: 415px;
+    width: 330px;
     color: black;
     background-color: rgb(233, 74, 74);
     padding: 10px 0 10px 0;
@@ -69,10 +72,10 @@ p {
 }
 
 #guess {
-    width: 415px;
+    width: 330px;
     color: black;
     background-color: rgb(233, 74, 74);
-    padding: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
     text-indent: 20px;
     font-weight: bold;
     font-size: 30px;
