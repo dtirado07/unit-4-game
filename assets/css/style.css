@@ -1,0 +1,93 @@
+#wrapper {
+    width: 960px;
+    background-image: url(crossline-dots.png);
+    background-repeat: repeat;
+    clear: both;
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding-bottom: 20px;
+}
+
+h1 {
+    background-color: #084e4b;
+    padding: 25px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: #084e4b;
+    background-color: white;
+    width: 500px;
+    padding: 40px;
+    margin: 20px 20px 20px 20px;
+}
+
+#random {
+    background-color: green;
+    color: black;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+#score {
+    background-color: orange;
+    color: black;
+    position: relative;
+    float: left;
+    width: 70px;
+    margin-left: 10px;
+
+}
+
+#crystals {
+    width: 500px;
+    margin: 20px 20px 20px 20px;
+    clear: both;
+
+}
+
+#guesscontent {
+    width: 435px;
+}
+
+#yourguess {
+    width: 415px;
+    color: black;
+    background-color: rgb(233, 74, 74);
+    padding: 10px 0 10px 0;
+    text-indent: 20px;
+}
+
+#guess {
+    width: 415px;
+    color: black;
+    background-color: rgb(233, 74, 74);
+    padding: 40px 0 40px 0;
+    text-indent: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer {
+    padding: 20px 0px 20px 0;
+    background-color: #666666;
+    color: white;
+    bottom: 0;
+    margin: 0;
+    width: 960px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+}
+

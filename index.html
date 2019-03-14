@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <h1>Crystal Collector!</h1>
+            <p id="instructions">
+                Welcome! At the start of each game you will receive a random number.
+                <br><br>
+                By clicking on the crystals below you will add specific amount of points to your total score.
+                <br><br>
+                You will win if your total score is exactly the same as the random computer number if you go above that
+                number you will lose.
+                <br><br>
+                Each time you play the random number will be different as well as the value for the crystals. Good luck!
+            </p>
+        </div>
+        <div class="content">
+            <p id="random">1</p>
+            <p id="score">
+                Wins: <br><br>
+                Loses:
+            </p>
+        </div>
+        <div id="crystals">
+            <a href="#">
+                <img src="assets/images/obsidian.jpg" width=100px height=100px id="obsidian">
+            </a>
+
+            <a href="#">
+                <img src="assets/images/ruby.jpg" width=100px height=100px id="ruby">
+            </a>
+            <a href="#">
+                <img src="assets/images/jade.jpg" width=100px height=100px id="jade">
+            </a>
+            <a href="#">
+                <img src="assets/images/diamond.jpg" width=100px height=100px id="diamond">
+            </a> 
+        </div>
+        <div id="guesscontent">
+            <p id="yourguess">Your Guess is:</p>
+            <p id = "guess">20</p>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &#9400; Daniel Tirado
+    </footer>
+
+</body>
+
+</html>
