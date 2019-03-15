@@ -14,6 +14,10 @@ $(document).ready(function () {
     function restart() {
         $("#guess").text("");
         guess = 0;
+        $("#obsidian-cont").unbind();
+        $("#ruby-cont").unbind();
+        $("#jade-cont").unbind();
+        $("#diamond-cont").unbind();
         compRandom();
         writeScore();
         game();
@@ -30,6 +34,7 @@ $(document).ready(function () {
         $("#score").html("Wins: " + wins + "<br><br> Loses: " + losses);
     }
 
+
     function game() {
         obsidian = Math.floor(Math.random() * 12 + 1);
         ruby = Math.floor(Math.random() * 12 + 1);
@@ -43,9 +48,6 @@ $(document).ready(function () {
 
 
         $("#obsidian-cont").click(function () {
-            console.log("guess c " + guess);
-            console.log("obsidian c " + obsidian);
-
             if (guess < random) {
                 guess += obsidian;
                 $("#guess").text(guess);
@@ -56,26 +58,86 @@ $(document).ready(function () {
                 $("#guess").text(guess);
                 alert("You Lost");
                 losses++;
-                $("#obsidian-cont").unbind();
                 writeScore();
-                restart();
-
-               
+                restart();     
             }
             if (guess === random) {
                 $("#guess").text(guess);
                 alert("You Win");
                 wins++;
-                $("#obsidian-cont").unbind();
                 writeScore();
                 restart();
             }
         });
 
+        $("#ruby-cont").click(function () {
+            if (guess < random) {
+                guess += ruby;
+                $("#guess").text(guess);
+                console.log("guess " + guess);
+                console.log("random: " + random);
+            }
+            if (guess > random) {
+                $("#guess").text(guess);
+                alert("You Lost");
+                losses++;
+                writeScore();
+                restart();     
+            }
+            if (guess === random) {
+                $("#guess").text(guess);
+                alert("You Win");
+                wins++;
+                writeScore();
+                restart();
+            }
+        });
 
+        $("#jade-cont").click(function () {
+            if (guess < random) {
+                guess += jade;
+                $("#guess").text(guess);
+                console.log("guess " + guess);
+                console.log("random: " + random);
+            }
+            if (guess > random) {
+                $("#guess").text(guess);
+                alert("You Lost");
+                losses++;
+                writeScore();
+                restart();     
+            }
+            if (guess === random) {
+                $("#guess").text(guess);
+                alert("You Win");
+                wins++;
+                writeScore();
+                restart();
+            }
+        });
 
-
-
+        $("#diamond-cont").click(function () {
+            if (guess < random) {
+                guess += diamond;
+                $("#guess").text(guess);
+                console.log("guess " + guess);
+                console.log("random: " + random);
+            }
+            if (guess > random) {
+                $("#guess").text(guess);
+                alert("You Lost");
+                losses++;
+                writeScore();
+                restart();     
+            }
+            if (guess === random) {
+                $("#guess").text(guess);
+                alert("You Win");
+                wins++;
+                writeScore();
+                restart();
+            }
+        });
 
     }
 });
